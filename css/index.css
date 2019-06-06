@@ -240,6 +240,13 @@ header .header-container {
   padding-right: 1%;
   padding-left: 0;
 }
+.home .fun-bus-container {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 10px;
+}
+.home .fun-bus-container .welcome-text {
+  padding-top: 20px;
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
