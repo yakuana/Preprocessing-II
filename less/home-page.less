@@ -59,15 +59,9 @@
     }
 
     .btn {
-      background: teal; 
-      color: white; 
       font-size: 2rem; 
-      height: 40px; 
-      width: 80%; 
-      border: 1px solid @silver;  
-      border-radius: 15px; 
-      text-align: center; 
-      padding-top: 10px; 
+      .buttons-color(@button-bg, @white; @navigation-border; 15px);
+      .buttons-dimensions(40px, 80%, 8px);
     }
   }
 }// home

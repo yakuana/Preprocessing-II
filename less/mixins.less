@@ -1,1 +1,15 @@
 // Mixins in here
+
+.buttons-dimensions (@bHeight, @bWidth, @topPadding) {
+    height: @bHeight; 
+    width: @bWidth;  
+    padding-top: @topPadding; 
+}
+
+.buttons-color (@bgColor, @textColor, @borderColor, @bRadius) {
+    background: @bgColor; 
+    color: @textColor;
+    border: 1px solid @borderColor; 
+    border-radius: @bRadius;  
+}
+
