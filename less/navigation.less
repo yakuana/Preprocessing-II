@@ -1,1 +1,54 @@
 // Navigation Styles here
+
+header {
+    border-bottom: 2px dashed @navigation-border; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+
+    @media @mobile {
+        padding-bottom: 10px; 
+
+        h1 {
+            padding-bottom: 5px; 
+            margin-left: auto; 
+            margin-right: auto; 
+            font-size: 3rem; 
+        }
+    }
+
+    nav {
+
+        width: 400px; 
+        .row(); 
+        justify-content: space-evenly; 
+        padding-top: 10px; 
+
+        @media @mobile {
+            width: 100%; 
+        }
+    }
+
+    nav a {
+        font-size: 1.5rem; 
+        color: black; 
+        text-decoration: none; 
+    }
+
+    nav a:hover {
+        color: lighten(black, 50%); 
+    }
+
+    .header-container {
+        width: 800px; 
+        .row(); 
+
+        @media @mobile {
+            width: 500px; 
+            .column(); 
+        }
+
+        justify-content: space-between; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
