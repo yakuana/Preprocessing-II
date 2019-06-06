@@ -1,3 +1,7 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,6 +172,34 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  border-bottom: 2px dashed #C0C0C0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header nav {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+header nav a {
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #808080;
+}
+header .header-container {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -226,13 +258,12 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .btn {
-  background: #17A2B8;
-  color: #FFFFFF;
   font-size: 2rem;
   height: 40px;
   width: 80%;
+  padding-top: 8px;
+  background: #17A2B8;
+  color: #FFFFFF;
   border: 1px solid #C0C0C0;
   border-radius: 15px;
-  text-align: center;
-  padding-top: 8px;
 }
