@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -172,10 +176,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+}
 header {
   border-bottom: 2px dashed #C0C0C0;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  header {
+    padding-bottom: 10px;
+  }
+  header h1 {
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+  }
 }
 header nav {
   width: 400px;
@@ -183,6 +203,11 @@ header nav {
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 10px;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+  }
 }
 header nav a {
   font-size: 1.5rem;
@@ -199,6 +224,13 @@ header .header-container {
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 500px) {
+  header .header-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .footer {
   width: 100%;
@@ -228,9 +260,29 @@ header .header-container {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+  .home .content-section .img-content img {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -250,6 +302,11 @@ header .header-container {
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -273,4 +330,25 @@ header .header-container {
   color: #FFFFFF;
   border: 1px solid #C0C0C0;
   border-radius: 15px;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home .content-pick .btn {
+    font-size: 1.8rem;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    padding-top: 8px;
+    background: #17A2B8;
+    color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+    border-radius: 12px;
+  }
 }
