@@ -91,8 +91,20 @@
 
     .btn {
       font-size: 2rem; 
+      text-align: center;
+
       .buttons-dimensions(40px, 80%, 8px);
       .buttons-color(@button-bg, @main-bg, @navigation-border, 15px);
+
+      @media @mobile {
+        font-size: 1.8rem; 
+
+        // @bHeight, @bWidth, @topPadding
+        .buttons-dimensions(40px, 100%, 8px);
+          
+        // @bgColor, @textColor, @borderColor, @bRadius
+        .buttons-color(@button-bg, @main-bg, @navigation-border, 12px);
+      }
     }
 
     @media @mobile { 
@@ -102,17 +114,6 @@
         width: 80%;
         margin-left: auto; 
         margin-right: auto; 
-      }
-
-      .btn {
-        font-size: 1.8rem; 
-        text-align: center;
-
-        // @bHeight, @bWidth, @topPadding
-        .buttons-dimensions(40px, 100%, 8px);
-         
-        // @bgColor, @textColor, @borderColor, @bRadius
-        .buttons-color(@button-bg, @main-bg, @navigation-border, 12px);
       }
     }
   }
